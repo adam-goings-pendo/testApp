@@ -24,7 +24,7 @@ $("input[type=submit").on("click", function(event){
 createButtons();
 
 //when the button is clicked, it grabs 10 still images based on the string from the array
-$("button").on("click", function pullGiphy() {
+$(document).on("click", "button" , function pullGiphy() {
 
   //this removes the spaces in the strings of the array and adds a plus sign for the purpose of the URL
   let person = $(this).attr("value").replace(/\s/g, "+");
